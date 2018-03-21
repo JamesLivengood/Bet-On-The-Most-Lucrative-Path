@@ -1,3 +1,61 @@
-h2 {
+body {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /*background-color: black;*/
+  /*background-image: url("https://i.ytimg.com/vi/FaGnCtsj4e8/maxresdefault.jpg");
+  backgroudn-image: url("https://qph.fs.quoracdn.net/main-qimg-955ca3ed47386642dfea28ee26fb859e-c");
+  background-position: bottom;
+  background-size: cover;*/
+  /*color: white;*/
+}
+
+body div{
+  /*border: 1px solid red;*/
+}
+
+.center-div {
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  height: 500px;
+  width: 500px;
+  border: 1px solid red;
+  margin: 18px;
+}
+
+.canvas-div {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-div, .left-div {
+  width: 17%;
+}
+
+.left-div {
+  /*margin-left: 10px;*/
+}
+
+.right-div {
+  /*margin-right: 5px;*/
+}
+
+.right-div span {
+  font-size: 9px;
+}
+
+h1 {
   font-size: 30px;
+}
+
+.center-div h1 {
+  font-size: 40px;
 }
