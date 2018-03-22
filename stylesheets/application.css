@@ -2,6 +2,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
+
   /*background-color: black;*/
   /*background-image: url("https://i.ytimg.com/vi/FaGnCtsj4e8/maxresdefault.jpg");
   backgroudn-image: url("https://qph.fs.quoracdn.net/main-qimg-955ca3ed47386642dfea28ee26fb859e-c");
@@ -13,9 +14,18 @@
 body {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
   border: 1px solid black;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
+  background-color: rgb(165, 11, 11);
+  color: rgba(255, 188, 114, 0.8);
+  text-shadow: 1px 1px 2px rgba(188, 9, 9, 1), 0 0 0.7em yellow, 0 0 0.15em yellow, 5px 5px 12px black;
+  text-rendering: optimizeLegibility;
+  /* font-family: 'Abril Fatface'; */
+  font-family: 'Nova Slim';
+  /* height: 100%; */
+  /* font-family: 'Droid Sans'; */
 }
 
 body div{
@@ -32,17 +42,50 @@ body div{
 }
 
 canvas {
-  /*height: 100%;
-  width: 100%;*/
-  border: 1px solid red;
-  margin: 18px;
+  /* margin: 18px; */
+  background-color: rgb(250, 165, 70);
+  color: rgb(165, 11, 11);
+  box-shadow: 0 1px 2px 5px rgba(0,0,0,0.3);
+}
+
+.yin-yang {
+  height: 75px;
+  width: auto;
+  opacity: 1;
+  margin-bottom: 9px;
+  filter: drop-shadow(2px 2px 0.75rem black);
+  /* background-color: rgb(248,	165,	71); */
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.left-canvas {
+  border-bottom: 5px solid rgb(180, 116, 50);
+  border-left: 5px solid rgb(180, 116, 50);
+  border-top: 5px solid rgb(196, 134, 72);
+  border-right: 5px solid rgb(196, 134, 72);
+}
+
+.right-canvas {
+  border-bottom: 5px solid rgb(180, 116, 50);
+  border-right: 5px solid rgb(180, 116, 50);
+  border-top: 5px solid rgb(196, 134, 72);
+  border-left: 5px solid rgb(196, 134, 72);
 }
 
 .canvas-div {
-  margin-top: 25px;
-  width: 70%;
+  margin-top: 11px;
+  width: 1144px;
   display: flex;
   justify-content: space-around;
+
 }
 
 .right-div, .left-div {
@@ -51,11 +94,13 @@ canvas {
 
 .left-div {
   margin-top: 15px;
+  font-size: 15px;
   /*margin-left: 10px;*/
 }
 
 .right-div {
   /*margin-right: 5px;*/
+
 }
 
 .right-div span {
@@ -66,6 +111,19 @@ h1 {
   font-size: 30px;
 }
 
+.footer-text {
+  margin-top: 25px;
+  opacity: .7;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
 .center-div h1 {
-  font-size: 40px;
+  font-size: 48px;
+}
+
+.footer-image {
+  opacity: .2;
+  display: block;
+  margin-top: 0;
 }
