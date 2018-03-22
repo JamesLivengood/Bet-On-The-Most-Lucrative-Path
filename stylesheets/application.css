@@ -24,8 +24,8 @@ body div{
 }
 
 canvas {
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
   border: 1px solid red;
   margin: 18px;
 }
@@ -41,6 +41,7 @@ canvas {
 }
 
 .left-div {
+  margin-top: 15px;
   /*margin-left: 10px;*/
 }
 
