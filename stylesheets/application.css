@@ -78,7 +78,9 @@ canvas {
   border-top: 5px solid rgb(196, 134, 72);
   border-right: 5px solid rgb(196, 134, 72);
   background-image: url('../images/50opacity_red_pyr.png');
-  background-position: 17px;
+  background-repeat: no-repeat;
+  /* background-position: 17px; */
+  background-position: bottom -60px left -20px;
   /* display: block;
   position: relative; */
   /* opacity: 0.5; */
@@ -103,7 +105,9 @@ canvas {
   border-left: 5px solid rgb(196, 134, 72);
   background-image: url('../images/50opacity_red_pyr.png');
   /* opacity: 0.5; */
-  background-position: -520px;
+  /* background-position: -520px; */
+  background-repeat: no-repeat;
+  background-position: bottom -60px right 0px;
 }
 
 .canvas-div {
