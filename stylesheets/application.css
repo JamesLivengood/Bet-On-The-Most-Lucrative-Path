@@ -148,6 +148,14 @@ h1 {
   margin-bottom: 50px;
 }
 
+.left-div, .right-div {
+  opacity: .7;
+}
+
+
+
+
+
 .center-div h1 {
   font-size: 48px;
 }
