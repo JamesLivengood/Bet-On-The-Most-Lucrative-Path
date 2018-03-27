@@ -76,10 +76,17 @@ body {
 
 .canvas-div button {
     opacity: .5;
+    border: 1px solid rgb(163,	0,	13);
 }
 
 .canvas-div button:hover {
   opacity: 1;
+  border: 1px solid rgb(163,	0,	13);
+}
+
+.canvas-div button:active {
+  box-shadow: 1px 1px 5px black, inset 0px 0px 10px rgb(83, 15, 15);
+  border: 1px solid rgb(73, 0, 5);
 }
 
 body div{
@@ -104,7 +111,7 @@ canvas {
   /* transform: rotate(45deg); */
 }
 
-.yin-yang, .yin-yang-spinning {
+.yin-yang, .yin-yang-spinning, .yin-yang-img, .yin-yang-begin-spin, .yin-yang-fast-spin, .yin-yang-slow-spin, .yin-yang-div {
   height: 125px;
   width: auto;
   opacity: 1;
@@ -114,16 +121,55 @@ canvas {
 
 }
 
-.yin-yang-spinning {
+.yin-yang-begin-spin {
+  -webkit-animation-name: quickExpand;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+}
+
+.yin-yang-div-fast-spin {
+  height: 125px;
   -webkit-animation-name: spin;
-  -webkit-animation-duration: 500ms;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 150ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  filter: drop-shadow(2px 2px 3rem yellow);
+}
+
+.yin-yang-div-slow-spin {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
 
+@keyframes quickExpand {
+  0% {
+    height: 125px;
+    width: auto;
+    transform:rotate(0deg);
+  }
+  50% {
+    height: 150px;
+    width: auto;
+    transform:rotate(360deg);
+    filter: drop-shadow(2px 2px 3rem yellow);
+  }
+  100% {
+    height: 125px;
+    width: auto;
+    transform:rotate(0deg);
+  }
+}
+
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
 }
 
 .left-canvas {
@@ -193,6 +239,13 @@ canvas {
   font-size: 9px;
 }
 
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -209,7 +262,12 @@ h1 {
 }
 
 
-
+.buy-out-button {
+  margin: 0px -20px 100px -20px;
+  padding: 15px;
+  font-size: 30px!important;
+  text-align: center;
+}
 
 
 .center-div h1 {
@@ -220,4 +278,27 @@ h1 {
   opacity: .5;
   display: block;
   margin-top: 0;
+}
+
+.left-value, .right-value, .left-value-active, .right-value-active {
+  width: 200px;
+  text-align: center;
+  margin-bottom: -50px;
+  font-size: 20px;
+}
+
+.left-value, .left-value-active {
+  margin-right: -150px;
+}
+
+.right-value, .right-value-active {
+  margin-left: -150px;
+}
+
+.left-value, .right-value {
+  opacity: .3;
+}
+
+.left-value-active, .right-value-active {
+  opacity: 1;
 }
