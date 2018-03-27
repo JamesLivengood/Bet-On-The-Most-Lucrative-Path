@@ -142,6 +142,7 @@ canvas {
   -webkit-animation-duration: 1000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  filter: drop-shadow(2px 2px 3rem yellow);
 }
 
 @keyframes quickExpand {
