@@ -74,6 +74,10 @@ body {
   margin-bottom: -70px;
 }
 
+.left-button:active, .right-button:active {
+  font-size: 13px!important;
+}
+
 .canvas-div button {
     opacity: .5;
     border: 1px solid rgb(163,	0,	13);
@@ -87,6 +91,10 @@ body {
 .canvas-div button:active {
   box-shadow: 1px 1px 5px black, inset 0px 0px 10px rgb(83, 15, 15);
   border: 1px solid rgb(73, 0, 5);
+}
+
+.buy-out-button:active {
+  font-size: 31px!important;
 }
 
 body div{
@@ -111,7 +119,7 @@ canvas {
   /* transform: rotate(45deg); */
 }
 
-.yin-yang, .yin-yang-spinning, .yin-yang-img, .yin-yang-begin-spin, .yin-yang-fast-spin, .yin-yang-slow-spin, .yin-yang-div {
+.yin-yang, .yin-yang-spinning, .yin-yang-img, .yin-yang-begin-spin, .yin-yang-div, .yin-yang-begin-slow-spin {
   height: 125px;
   width: auto;
   opacity: 1;
@@ -122,6 +130,12 @@ canvas {
 }
 
 .yin-yang-begin-spin {
+  -webkit-animation-name: quickExpand;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+}
+
+#swag {
   -webkit-animation-name: quickExpand;
   -webkit-animation-duration: 1000ms;
   -webkit-animation-iteration-count: 1;
@@ -138,8 +152,10 @@ canvas {
 }
 
 .yin-yang-div-slow-spin {
+  height: 125px;
   -webkit-animation-name: spin;
-  -webkit-animation-duration: 1000ms;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 2000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   filter: drop-shadow(2px 2px 3rem yellow);
@@ -302,4 +318,52 @@ h1 {
 
 .left-value-active, .right-value-active {
   opacity: 1;
+}
+
+  .countdown {
+    height: 10px;
+    padding-bottom: 75px!important;
+    margin-bottom: -10px!important;
+    width: auto;
+    font-size: 45px!important;
+    /* margin-top: 20px!important; */
+  }
+
+#pulse {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 12;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 55px;
+    filter: drop-shadow(2px 2px 3rem yellow);
+    /* transform:rotate(180deg); */
+    opacity: 0;
+  }
+  10%{
+    /* transform:rotate(0deg); */
+    opacity: 1;
+  }
+  25% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 45px;
+    /* transform:rotate(360deg); */
+  }
+  75% {
+    font-size: 40px;
+    /* transform: rotate(0deg); */
+  }
+  85%{
+    /* transform: rotate(270deg); */
+  }
+  100% {
+    /* transform: rotate(360deg); */
+    font-size: 35px;
+    opacity: 0.0
+    /* transform:rotate(0deg); */
+  }
 }
