@@ -14,6 +14,10 @@
   box-shadow: inset 2px 2px 5px black;
 }
 
+.yin-yang-img:hover {
+  filter: drop-shadow(2px 2px 3rem yellow);
+}
+
 .left-button {
   margin-right: -175px;
   margin-bottom: -70px;
