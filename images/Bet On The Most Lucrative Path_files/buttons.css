@@ -1,0 +1,97 @@
+
+.canvas-div button, .canvas-div button:hover {
+  color: rgba(255, 188, 114, 0.8);
+  text-shadow: 1px 1px 2px rgba(188, 9, 9, 1), 0 0 0.7em yellow, 0 0 0.15em yellow, 5px 5px 12px black;
+
+  text-rendering: optimizeLegibility;
+  font-family: 'Nova Slim';
+  text-align: center;
+  font-size: 12px;
+  background-color: rgb(138, 9, 9);
+  border-radius: 500px;
+  height: 80px;
+  width: 80px;
+  box-shadow: inset 2px 2px 5px black;
+}
+
+.left-button {
+  margin-right: -175px;
+  margin-bottom: -70px;
+}
+
+.right-button {
+  margin-left: -175px;
+  margin-bottom: -70px;
+}
+
+.left-button:active, .right-button:active {
+  font-size: 13px!important;
+}
+
+.canvas-div button {
+    opacity: .5;
+    box-sizing: border-box;
+    border: 1px solid rgb(163,	0,	13);
+    /* border: 5px solid transparent; */
+}
+
+.left-button:hover, .right-button:hover {
+  opacity: .5!important;
+}
+
+.active:hover {
+  opacity: 1!important;
+}
+
+.canvas-div button:hover {
+  opacity: 1;
+  border: 1px solid rgb(163,	0,	13);
+}
+
+.canvas-div button:active {
+  box-shadow: 1px 1px 5px black, inset 0px 0px 10px rgb(83, 15, 15);
+  border: 1px solid rgb(73, 0, 5);
+}
+
+.buy-out-button:active {
+  font-size: 31px!important;
+}
+
+
+.buy-out-button {
+  margin: 0px -20px 100px -20px;
+  padding: 15px;
+  font-size: 30px!important;
+  text-align: center;
+  box-sizing: content-box!important;
+  height: 80px!important;
+  width: 80px!important;
+}
+
+.active {
+  /* animation: slideDash 2.5s infinite;
+  border: 3px dashed rgb(242,	180,	92)!important; */
+  /* opacity: 1!important; */
+  filter: drop-shadow(2px 2px 3rem yellow);
+  transition: all 10s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+/* @keyframes slideDash {
+  from { transform: translateX( -50% ); }
+  to   { transform: translateX(   0% ); }
+} */
+
+.selected:hover {
+  opacity: 1!important;
+}
+
+.selected {
+  /* background-color: rgb(246,	180,	36)!important;
+  color: rgb(163,	0,	13)!important; */
+  transform: rotate(99999deg);
+  opacity: 1!important;
+  font-size: 13px!important;
+  filter: drop-shadow(2px 2px 3rem yellow);
+  box-shadow: 1px 1px 5px black, inset 0px 0px 10px rgb(83, 15, 15)!important;
+  border: 1px solid rgb(73, 0, 5)!important;
+}

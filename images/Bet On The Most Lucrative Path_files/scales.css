@@ -1,0 +1,49 @@
+.scale-holder {
+  transition: all 2s ease-in-out;
+}
+
+.scale-holder {
+  /* position: absolute; */
+  background-image: url('../images/gold-scales-cross.png');
+  background-repeat: no-repeat;
+  background-position: bottom right 16px;
+background-size: 188px;
+  /* height: 100px; */
+  margin: -185px -80px 0 -80px;
+  width: 180px;
+  /* border: 1px solid black; */
+  display: flex;
+  opacity: 0;
+  right: 835px;
+  height: 185px;
+  width: 220px;
+  z-index: -1;
+}
+
+.scale-holder p {
+  text-align: center;
+  font-size: 34px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1!important;
+  padding-bottom: 20px;
+  z-index: 3;
+}
+
+.scales {
+  /* display: none; */
+  opacity: 1;
+  bottom: -91px;
+  filter: drop-shadow(0px 20px 0.2rem black);
+  z-index: 1!important;
+}
+
+.right-scale {
+
+}
+
+.left-scale, .right-scale {
+  /* border: 1px solid black; */
+  width: 50%
+}

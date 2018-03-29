@@ -1,0 +1,56 @@
+canvas {
+  /* margin: 18px; */
+  /*background-color: rgb(250, 165, 70);*/
+  color: rgb(165, 11, 11);
+  box-shadow: 0 1px 2px 5px rgba(0,0,0,0.3);
+
+  /* transform: rotate(45deg); */
+}
+
+.left-canvas {
+  border-bottom: 5px solid rgb(180, 116, 50);
+  border-left: 5px solid rgb(180, 116, 50);
+  border-top: 5px solid rgb(196, 134, 72);
+  border-right: 5px solid rgb(196, 134, 72);
+  background-image: url('../images/50opacity_red_pyr.png');
+  background-repeat: no-repeat;
+  /* background-position: 17px; */
+  background-position: bottom -60px left -20px;
+  /* display: block;
+  position: relative; */
+  /* opacity: 0.5; */
+  /* background-color: rgb(250, 165, 70);
+  background: linear-gradient(to bottom right, rgb(195,	134,	72), rgb(179,	115,	51)); */
+}
+
+/* .left-canvas::after {
+  content: "";
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+} */
+
+
+.right-canvas {
+  border-bottom: 5px solid rgb(180, 116, 50);
+  border-right: 5px solid rgb(180, 116, 50);
+  border-top: 5px solid rgb(196, 134, 72);
+  border-left: 5px solid rgb(196, 134, 72);
+  background-image: url('../images/50opacity_red_pyr.png');
+  /* opacity: 0.5; */
+  /* background-position: -520px; */
+  background-repeat: no-repeat;
+  background-position: bottom -60px right 0px;
+}
+
+.canvas-div {
+  margin-top: 11px;
+  /* width: 1144px; */
+  width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+}
