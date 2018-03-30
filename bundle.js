@@ -115,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gri
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Firestore {\n  constructor() {\n    this.firestore = firebase.firestore();\n    this.ref = this.firestore.doc('scores/scoreData');\n    this.pushScore = this.pushScore.bind(this);\n    this.returnScoresList = this.returnScoresList.bind(this);\n  }\n\n  pushScore(data) {\n    this.ref.set(data);\n  }\n\n  returnScoresList() {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Firestore);\n\n//# sourceURL=webpack:///./lib/firestore.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nclass Firestore {\n  constructor() {\n    this.firestore = firebase.firestore();\n    this.ref = this.firestore.doc('scores/scoreData');\n    this.pushScore = this.pushScore.bind(this);\n    this.returnScoresList = this.returnScoresList.bind(this);\n    // this.returnScoresList();\n  }\n\n  pushScore(data) {\n    this.ref.set(data);\n  }\n\n  returnScoresList() {\n    this.ref.get().then(doc => {\n      console.log(doc);\n    });\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Firestore);\n\n//# sourceURL=webpack:///./lib/firestore.js?");
 
 /***/ }),
 
