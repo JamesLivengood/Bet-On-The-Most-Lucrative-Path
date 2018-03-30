@@ -13,8 +13,30 @@
     <link rel="stylesheet" href="./stylesheets/yin-yang.css">
     <link rel="stylesheet" href="./stylesheets/scales.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
   </head>
   <body>
+
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDN3-p7oA8C_GasrW4f_sFFuC0i90K4ns0",
+          authDomain: "bet-on-the-most-lucrative-path.firebaseapp.com",
+          databaseURL: "https://bet-on-the-most-lucrative-path.firebaseio.com",
+          projectId: "bet-on-the-most-lucrative-path",
+          storageBucket: "bet-on-the-most-lucrative-path.appspot.com",
+          messagingSenderId: "711733403910"
+        };
+        firebase.initializeApp(config);
+      </script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-functions.js"></script> -->
+
     <!-- <script type="application/javascript" src="./lib/bundle.js"></script> -->
     <script type="application/javascript" src="./bundle.js"></script>
     <div class='header'>
