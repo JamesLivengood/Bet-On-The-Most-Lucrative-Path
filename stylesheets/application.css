@@ -18,7 +18,8 @@ body {
   align-items: center;
   border: 1px solid black;
   padding-bottom: 0px;
-  background-color: rgb(165, 11, 11);
+  /* background-color: rgb(165, 11, 11); */
+  background-color: rgb(139,	0, 10);
   color: rgba(255, 188, 114, 0.8);
   text-shadow: 1px 1px 2px rgba(188, 9, 9, 1), 0 0 0.7em yellow, 0 0 0.15em yellow, 5px 5px 12px black;
   text-rendering: optimizeLegibility;
@@ -133,6 +134,7 @@ h1 {
   text-align: center;
   margin-bottom: -50px;
   font-size: 20px;
+  z-index: -1;
 }
 
 .left-value, .left-value-active {
