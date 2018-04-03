@@ -119,6 +119,18 @@ h1 {
   opacity: 1;
 }
 
+.slow-mode {
+  margin-top: 25px;
+  font-size: 22px;
+  opacity: 1;
+  margin-bottom: -25px;
+  /* display: none; */
+}
+
+.slow-mode span {
+  font-size: 8px;
+}
+
 .center-div h1 {
   font-size: 48px;
 }

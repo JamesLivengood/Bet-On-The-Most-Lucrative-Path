@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./stylesheets/canvas.css">
     <link rel="stylesheet" href="./stylesheets/yin-yang.css">
     <link rel="stylesheet" href="./stylesheets/scales.css">
+    <link rel="stylesheet" href="./stylesheets/how-to-play.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
@@ -44,7 +45,7 @@
       <div class='left-div'>
         <div class='for-all-paths'>For All Paths In Life... Are But A Bet</div>
         <div class='how-to-play'>How To Play</div>
-
+        <!-- <div class='slow-mode'>Slow Mode <span><span></div> -->
       </div>
       <div class='center-div'>
         <h1>Bet On The Most Lucrative Path</h1>
@@ -95,5 +96,32 @@
 
     <div class='footer-text'>Do Not Fret Defeat... Nor Celebrate Victory... For The Balance Shall Always Be Restored</div>
     <img class='footer-image' src='./images/cropped_blue_hundreds.jpeg'/>
+
+    <div class='how-to-play-background hidden'>
+      <div class='how-to-play-modal'>
+        <ul>
+          <li><strong>Goal:</strong> Get Rich</li>
+          <li><strong>How:</strong> Each round, click the bottom buttons to choose your path</li>
+          <li><strong>Start:</strong> click the yin-yang</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li>- After the maze builds, you have 10 seconds to choose your path</li>
+          <li>- If you have not chosen within the 10 seconds, you will be left out of the round, and will automatically lose 1000 dollars</li>
+          <li>- Each block's worth is determined by how DARK BLUE, it is, the DARKER the blue, the MORE 'blue hundreds' on the block</li>
+          <li>- Therefore, you want to pick the maze build who's solve will pass through the highest amount of DARK BLUE blocks</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><strong>About:</strong> The maze builder uses a Depth First Search to create the maze. It searches for a random, neighboring, unvisited node, set the parent-child relationship between the current node and the next node, and then build the needed walls to create the maze. To solve the path, it accesses the nodes, and uses a Breadth First Search, to find the shortest path to the goal. </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
