@@ -18,7 +18,20 @@
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
   </head>
   <body>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
       <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBorMepWNuS-dB4Zwt7MMBraNwHfLrd5kQ",
+          authDomain: "betonpath.firebaseapp.com",
+          databaseURL: "https://betonpath.firebaseio.com",
+          projectId: "betonpath",
+          storageBucket: "betonpath.appspot.com",
+          messagingSenderId: "142122009395"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <!-- <script>
         // Initialize Firebase
         var config = {
           apiKey: "AIzaSyDN3-p7oA8C_GasrW4f_sFFuC0i90K4ns0",
@@ -29,7 +42,7 @@
           messagingSenderId: "711733403910"
         };
         firebase.initializeApp(config);
-      </script>
+      </script> -->
     <!-- <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
