@@ -1,5 +1,5 @@
 
-.canvas-div button, .canvas-div button:hover {
+.canvas-div button, .canvas-div button:hover, .enter-name-form button:hover {
   color: rgba(255, 188, 114, 0.8);
   text-shadow: 1px 1px 2px rgba(188, 9, 9, 1), 0 0 0.7em yellow, 0 0 0.15em yellow, 5px 5px 12px black;
 
@@ -62,7 +62,7 @@
 }
 
 
-.buy-out-button {
+.buy-out-button{
   margin: 0px -20px 100px -20px;
   padding: 15px;
   font-size: 30px!important;
