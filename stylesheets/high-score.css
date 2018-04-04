@@ -52,6 +52,7 @@ transition: all 0.5s ease-in-out;
 
 .high-score-ol::-webkit-scrollbar, .low-score-ol::-webkit-scrollbar {
   width: 0px;
+  /* color: blue; */
 }
 
 .high-score-ol li, .low-score-ol li {
