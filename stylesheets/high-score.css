@@ -27,3 +27,34 @@ transition: all 0.5s ease-in-out;
 .enter-name-button:hover {
   opacity: 1;
 }
+
+.high-score-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.high-score-ol, .low-score-ol {
+  padding-top: 20px;
+  /* padding-left: 10px; */
+  height: 300px;
+  width: 200px;
+  overflow:hidden;
+  overflow-y:scroll;
+  border: 3px solid rgb(242,	170,	93);
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 20px;
+  /* inset 5px 5px 10px rgb(10,	11,	80); */
+  /* overflow-style:marquee,panner; */
+}
+
+.high-score-ol::-webkit-scrollbar, .low-score-ol::-webkit-scrollbar {
+  width: 0px;
+}
+
+.high-score-ol li, .low-score-ol li {
+  padding-top: 8px;
+  padding-left: 20px;
+}

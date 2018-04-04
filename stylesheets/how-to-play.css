@@ -2,7 +2,7 @@
  cursor: pointer;
 }
 
-.how-to-play-background, .enter-name-background {
+.how-to-play-background, .enter-name-background, .high-score-list-background {
   /* position: absolute;
   width: 100%;
   height: 100%;
@@ -23,7 +23,7 @@
   /* transition: all 0.5s ease-in-out; */
 }
 
-.enter-name-background {
+.enter-name-background, .high-score-list-background {
   background: rgba(10, 10, 10, 0.85);
 }
 
