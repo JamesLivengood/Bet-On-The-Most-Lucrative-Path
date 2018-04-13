@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./stylesheets/scales.css">
     <link rel="stylesheet" href="./stylesheets/how-to-play.css">
     <link rel="stylesheet" href="./stylesheets/high-score.css">
+    <link rel="stylesheet" href="./stylesheets/how-it-works-footer.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
@@ -79,6 +80,7 @@
         <img class = 'gold-arrow-left' src='./images/Arrow-big-gold.png'></img>
       </div>
       <button class='left-button'>Yes I Shall Walk This Path</button>
+      <span class='start'>start</span>
       <canvas class='left-canvas'></canvas>
       <div>
         <p class='countdown'></p>
@@ -94,7 +96,10 @@
         <span>Bank:</span>
         <span class='score'>5000 <img src='./images/single_blue_hundred.jpg'></img></span>
       </div>
-      <canvas class='right-canvas'></canvas>
+      <canvas class='right-canvas'>
+        <!-- <div id='mask'>swagyolo</div> -->
+      </canvas>
+      <span class='start'>start</span>
       <button class='right-button'>No I Shall Walk This Path
 
       </button>
@@ -109,6 +114,15 @@
 
     <div class='footer-text'>Do Not Fret Defeat... Nor Celebrate Victory... For The Balance Shall Always Be Restored</div>
     <img class='footer-image' src='./images/cropped_blue_hundreds.jpeg'/>
+    <div class='footer-div'>
+      <h1>How It Works</h2>
+      <div class='how-it-works-inner-container'>
+        <canvas class='slow-canvas'></canvas>
+        <canvas class='node-tree-canvas'>
+
+        </canvas>
+      </div>
+    </div>
 
     <div class='how-to-play-background hidden'>
       <div class='how-to-play-modal'>

@@ -136,6 +136,7 @@ h1 {
 }
 
 .footer-image {
+  /* display: none!important; */
   opacity: .2;
   display: block;
   margin-top: 0;

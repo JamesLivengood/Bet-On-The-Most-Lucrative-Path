@@ -23,6 +23,7 @@ canvas {
   background: linear-gradient(to bottom right, rgb(195,	134,	72), rgb(179,	115,	51)); */
 }
 
+
 /* .left-canvas::after {
   content: "";
   opacity: 0.5;
@@ -44,7 +45,14 @@ canvas {
   background-repeat: no-repeat;
   background-position: bottom -60px right 0px;
 }
-
+#mask {
+        position: absolute;
+        top:-1px;
+        left:1px;
+        width:50%;
+        height: 1px;
+        background-color:#fff;
+}
 .canvas-div {
   margin-top: 11px;
   /* width: 1144px; */
@@ -53,4 +61,12 @@ canvas {
   justify-content: space-around;
   align-items: flex-end;
 
+}
+
+.start {
+  display:none;
+  /* text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def; */
+  opacity: 0.3;
+  /* text-shadow: 1px 1px 1px darkgrey;
+  color: grey; */
 }

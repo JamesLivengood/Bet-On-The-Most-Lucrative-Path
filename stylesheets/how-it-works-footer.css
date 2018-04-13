@@ -1,0 +1,41 @@
+.slow-canvas {
+  border-bottom: 5px solid rgb(180, 116, 50);
+  border-right: 5px solid rgb(180, 116, 50);
+  border-top: 5px solid rgb(196, 134, 72);
+  border-left: 5px solid rgb(196, 134, 72);
+  background-image: url('../images/50opacity_red_pyr.png');
+  /* opacity: 0.5; */
+  /* background-position: -520px; */
+  background-repeat: no-repeat;
+  background-position: bottom -85px right -475px;
+  align-self: flex-start;
+  /* margin-bottom: 50px; */
+  /* transform: scale(5); */
+}
+
+.footer-div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.footer-div h1 {
+  margin-top:50px;
+  text-align:center;
+  margin-bottom: 80px;
+}
+
+.node-tree-canvas {
+  /* width: 800px; */
+  /* height: 464px; */
+  /* display:absolute; */
+}
+
+.how-it-works-inner-container {
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
