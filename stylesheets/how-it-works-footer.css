@@ -27,10 +27,10 @@
   margin-bottom: 80px;
 }
 
-.node-tree-canvas {
-  /* width: 800px; */
-  /* height: 464px; */
-  /* display:absolute; */
+.node-tree-div {
+  width: 800px;
+  height: 464px;
+  border: 1px solid
 }
 
 .how-it-works-inner-container {
