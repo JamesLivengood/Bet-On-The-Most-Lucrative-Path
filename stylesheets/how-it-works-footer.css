@@ -37,14 +37,16 @@
 
 .node-tree-div {
   padding-top:30px;
-  width: 800px;
-  height: 1100px;
+  width: 550px;
+  height: 900px;
   display:flex;
   flex-direction:column;
+  align-items: center;
   /*justify-content: flex-start;*/
   border-radius: 25px;
   border: 3px solid;
   box-shadow: inset 3px 5px 20px, 2px 2px 20px black;
+  margin-left: 80px;
 }
 
 .node-tree-row {
@@ -55,22 +57,24 @@
 .how-it-works-inner-container {
   display:flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 100px;
 }
 
 .tree-row {
-  width:15%;
+  width:45%;
   /*height:25px;*/
 
   /*border:1px solid black;*/
   /*height:25px;*/
+  margin-left: 0px!important;
   display:flex;
   justify-content: center;
 }
 
 .node-circle{
-  margin: 0 2.5px 0 2.5px;
+  /*margin: 0 2.5px 0 2.5px;*/
+  margin: 0 25px 0 25px;
   /*padding: 0 5px 0 5px;*/
   display:flex;
   flex-direction: column;
@@ -124,4 +128,24 @@
 
 .slctd-node {
   background-color: green;
+}
+
+.in-back-trace {
+  margin-top: 15px;
+  font-size: 30px;
+  opacity: 0.35;
+  line-height: 0px;
+  transition: all 0.1s ease-in-out;
+}
+
+.light-up {
+  opacity:1;
+  border-radius: 10px;
+  /*border: 2px solid gold;*/
+  /*box-shadow: 1px 2px 10px gold;*/
+}
+
+.slow-canvas-and-coords-div {
+  margin-top: 200px;
+  margin-right: 80px;
 }
