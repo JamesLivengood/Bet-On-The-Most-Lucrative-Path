@@ -17,6 +17,10 @@
   align-self: flex-start;
 }
 
+.semi-fast-canvas {
+  margin-bottom: 50px;
+}
+
 .footer-div {
   display:flex;
   flex-direction: column;
